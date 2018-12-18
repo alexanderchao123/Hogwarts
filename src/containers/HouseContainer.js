@@ -10,13 +10,12 @@ class HouseContainer extends Component {
   }
 
   render() {
-    // let characters = this.props.characters.map()
     let houses = this.state.houses.map((house) => {
       let houseCharacters = []
       this.props.characters.forEach((character) => {
         if (character.house == house) houseCharacters.push(character)
       })
-      return <House house={house} houseCharacters={houseCharacters} />
+      return <House updateHouse={this.props.updateHouse} house={house} houseCharacters={houseCharacters} />
     })
 
     return(

@@ -16,7 +16,7 @@ class EditForm extends Component {
 
   submitHandler = (event) => {
     event.preventDefault()
-    this.props.changeHouse(this.state.house)
+    this.props.updateHouse(this.state.house)
   }
 
   render() {

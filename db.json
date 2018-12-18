@@ -4,7 +4,7 @@
       "id": 0,
       "name": "Harry Potter",
       "age": 17,
-      "house": "Gryffind",
+      "house": "Gryffin",
       "role": "student",
       "image1": "http://www.univers-series.com/wp-content/uploads/2016/02/harrypotter.jpeg",
       "image2": "https://timedotcom.files.wordpress.com/2014/07/301386_full1.jpg"
@@ -13,7 +13,7 @@
       "id": 1,
       "name": "Hermione Granger",
       "age": 17,
-      "house": "Gryffindor",
+      "house": "Gryff",
       "role": "student",
       "image1": "https://wallpapersite.com/images/pages/pic_w/8936.jpg",
       "image2": "https://vignette.wikia.nocookie.net/harrypotter/images/7/7e/Hermione-HBP-hermione-granger-16048675-1919-2560.jpg/revision/latest?cb=20140628051753"
@@ -49,7 +49,7 @@
       "id": 5,
       "name": "Minerva McGonagall",
       "age": 75,
-      "house": "Gryffindor",
+      "house": "HufflePuff",
       "role": "professor",
       "image1": "https://fsmedia.imgix.net/21/fd/33/16/2844/4ec3/bae9/57d38001e216/sonserina.jpeg?rect=0%2C0%2C1920%2C959&dpr=2&auto=format%2Ccompress&w=650",
       "image2": "https://imgix.bustle.com/rehost/2016/9/13/4685a819-e442-4e36-af5b-9c8c42bfbf00.jpg?w=970&h=582&fit=crop&crop=faces&auto=format&q=70"
@@ -57,7 +57,7 @@
     {
       "name": "Hagrid",
       "age": "45",
-      "house": "none",
+      "house": "gryffindor",
       "role": "groundskeeper",
       "image1": "https://upload.wikimedia.org/wikipedia/en/1/10/RubeusHagrid.jpg",
       "image2": "https://upload.wikimedia.org/wikipedia/en/1/10/RubeusHagrid.jpg",
@@ -80,6 +80,15 @@
       "image1": "",
       "image2": "",
       "id": 8
+    },
+    {
+      "name": "Hafjksdjfkdsjflkdjsf",
+      "age": "12",
+      "house": "slytherin",
+      "role": "student",
+      "image1": "sfkdfklsdfj",
+      "image2": "fjsklfjlskf",
+      "id": 9
     }
   ]
 }

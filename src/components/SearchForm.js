@@ -3,27 +3,19 @@ import React, { Component } from 'react'
 class SearchForm extends Component {
   constructor() {
     super()
-    this.state = {
-      searchTerm: ""
-    }
+    this.state = {searchTerm: ""}
   }
 
   changeHandler = (event) => {
-    this.setState({
-      searchTerm: event.target.value
-    })
-  }
-
-  submitHandler = (event) => {
-    event.preventDefault()
-    this.props.searchHandler(this.state.searchTerm)
+    this.setState({searchTerm: event.target.value})
+    this.props.searchCharacter(event.target.value)
   }
 
   render() {
     return(
       <div>
         <h1>Search For Characters</h1>
-        <form onSubmit={this.submitHandler}>
+        <form>
           <input name="searchTerm" value={this.state.searchTerm} placeholder="Enter character name" onChange={this.changeHandler} />
           <button type="submit">Search</button>
         </form>

@@ -19,7 +19,7 @@ class CharacterImage extends Component {
     return(
       <div>
         {this.state.isClicked ? (
-          <Character character={this.props.character} />
+          <Character updateHouse={this.props.updateHouse} character={this.props.character} />
         ) : (
           <img src={this.props.character.image2} alt="" onClick={this.clickHandler} width="50%" height="50%" />
         ) }

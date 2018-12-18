@@ -5,7 +5,7 @@ class House extends Component {
 
   render() {
     let images = this.props.houseCharacters.map((character) => {
-      return <CharacterImage character={character}/>
+      return <CharacterImage updateHouse={this.props.updateHouse} character={character}/>
     })
 
     return(

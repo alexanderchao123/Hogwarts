@@ -5,57 +5,34 @@ class Character extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      character: this.props.character,
       isEdit: false
     }
   }
 
-  clickHandler = (event) => {
-    this.setState({
-      isEdit: !this.state.isEdit
-    })
+  toggleEditButton = (event) => {
+    this.setState({isEdit: !this.state.isEdit})
   }
 
-  changeHouse = (house) => {
+  updateHouse = (house) => {
     this.setState({
-      character: {
-        ...this.state.character,
-        house: house
-      },
       isEdit: false
     })
-  }
-
-  updateCharacter = () => {
-    let id = this.state.character.id
-    fetch(`http://localhost:3001/potter_stuff/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(this.state.character)
-    })
-    .then(resp => resp.json())
-    .then(json => console.log(json))
-  }
-
-  componentDidUpdate() {
-    this.updateCharacter()
+    this.props.updateHouse({...this.props.character, house: house})
   }
 
   render() {
     return(
       <div>
-        <img src={this.state.character.image1} alt="" width="50%" height="50%" />
-        <h3>Name: {this.state.character.name}</h3>
-        <h3>House: {this.state.character.house}</h3>
+        <img src={this.props.character.image1} alt="" width="50%" height="50%" />
+        <h3>Name: {this.props.character.name}</h3>
+        <h3>House: {this.props.character.house}</h3>
         {this.state.isEdit ? (
           <div>
-            <EditForm house={this.state.character.house} changeHouse={this.changeHouse} />
-            <button onClick={this.clickHandler}>Cancel</button>
+            <EditForm house={this.props.character.house} updateHouse={this.updateHouse} />
+            <button onClick={this.toggleEditButton}>Cancel</button>
           </div>
         ) : (
-          <button onClick={this.clickHandler}>Edit House</button>
+          <button onClick={this.toggleEditButton}>Edit House</button>
         )}
       </div>
     )
