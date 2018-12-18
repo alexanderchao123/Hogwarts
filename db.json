@@ -1,14 +1,16 @@
 {
-  "potter stuff": [
+  "potter_stuff": [
     {
+      "id": 0,
       "name": "Harry Potter",
       "age": 17,
-      "house": "Gryffindor",
+      "house": "Gryffind",
       "role": "student",
       "image1": "http://www.univers-series.com/wp-content/uploads/2016/02/harrypotter.jpeg",
       "image2": "https://timedotcom.files.wordpress.com/2014/07/301386_full1.jpg"
     },
     {
+      "id": 1,
       "name": "Hermione Granger",
       "age": 17,
       "house": "Gryffindor",
@@ -17,6 +19,7 @@
       "image2": "https://vignette.wikia.nocookie.net/harrypotter/images/7/7e/Hermione-HBP-hermione-granger-16048675-1919-2560.jpg/revision/latest?cb=20140628051753"
     },
     {
+      "id": 2,
       "name": "Ron Weasley",
       "age": 17,
       "house": "Gryffindor",
@@ -25,6 +28,7 @@
       "image2": "https://images.pottermore.com/bxd3o8b291gf/4kRGmTOvVYmIwsOikwcuUw/8b8f2e4ffcc1a5218bafe615f976abb0/Ron_Weasley_WB_F1_Ron_with_Scabbers_on_shoulder_00393692.jpg?w=1200"
     },
     {
+      "id": 3,
       "name": "Draco Malfoy",
       "age": 17,
       "house": "Slytherin",
@@ -33,6 +37,7 @@
       "image2": "https://qph.fs.quoracdn.net/main-qimg-0f9603b2605dce5b8dfb6d27028b02ab"
     },
     {
+      "id": 4,
       "name": "Severus Snape",
       "age": 38,
       "house": "Slytherin",
@@ -41,12 +46,40 @@
       "image2": "https://vignette.wikia.nocookie.net/harrypotter/images/a/a3/Severus_Snape.jpg/revision/latest?cb=20150307193047"
     },
     {
+      "id": 5,
       "name": "Minerva McGonagall",
       "age": 75,
       "house": "Gryffindor",
       "role": "professor",
       "image1": "https://fsmedia.imgix.net/21/fd/33/16/2844/4ec3/bae9/57d38001e216/sonserina.jpeg?rect=0%2C0%2C1920%2C959&dpr=2&auto=format%2Ccompress&w=650",
       "image2": "https://imgix.bustle.com/rehost/2016/9/13/4685a819-e442-4e36-af5b-9c8c42bfbf00.jpg?w=970&h=582&fit=crop&crop=faces&auto=format&q=70"
+    },
+    {
+      "name": "Hagrid",
+      "age": "45",
+      "house": "none",
+      "role": "groundskeeper",
+      "image1": "https://upload.wikimedia.org/wikipedia/en/1/10/RubeusHagrid.jpg",
+      "image2": "https://upload.wikimedia.org/wikipedia/en/1/10/RubeusHagrid.jpg",
+      "id": 6
+    },
+    {
+      "name": "dasdad",
+      "age": "dsada",
+      "house": "dasd",
+      "role": "dsad",
+      "image1": "adsd",
+      "image2": "adsd",
+      "id": 7
+    },
+    {
+      "name": "asdfasdf",
+      "age": "dsfsfdff",
+      "house": "",
+      "role": "",
+      "image1": "",
+      "image2": "",
+      "id": 8
     }
   ]
 }
